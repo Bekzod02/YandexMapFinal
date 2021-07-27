@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddLocationController" customModule="locationBook" customModuleProvider="target">
+            <connections>
+                <outlet property="addLocationButton" destination="sEy-bw-r31" id="LZs-en-juE"/>
+                <outlet property="infoLabel" destination="UvJ-Na-Pg2" id="Vs4-kH-QrE"/>
+                <outlet property="slideIdicator" destination="h5u-lC-Vtp" id="dp4-sa-hOB"/>
+                <outlet property="view" destination="iN0-l3-epB" id="opn-YC-DFv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5u-lC-Vtp" userLabel="sliderIndicator">
+                    <rect key="frame" x="177" y="16" width="60" height="4"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="5pI-cZ-4Df"/>
+                        <constraint firstAttribute="width" constant="60" id="Muk-rJ-goN"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvJ-Na-Pg2">
+                    <rect key="frame" x="10" y="54" width="394" height="101"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEy-bw-r31">
+                    <rect key="frame" x="20" y="165" width="46" height="40"/>
+                    <color key="backgroundColor" red="0.4823529412" green="0.85098039219999999" blue="0.52941176469999995" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sSo-PK-hUc"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="addLocationTapped:" destination="-1" eventType="touchUpInside" id="tJT-gn-9SO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UvJ-Na-Pg2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="F1O-xW-vJa"/>
+                <constraint firstItem="h5u-lC-Vtp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="H57-f0-spf"/>
+                <constraint firstItem="UvJ-Na-Pg2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Pao-BS-gvX"/>
+                <constraint firstItem="sEy-bw-r31" firstAttribute="top" secondItem="UvJ-Na-Pg2" secondAttribute="bottom" constant="10" id="VgU-vT-A30"/>
+                <constraint firstItem="h5u-lC-Vtp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="eco-IF-l5M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UvJ-Na-Pg2" secondAttribute="trailing" constant="10" id="goB-Cm-aAp"/>
+                <constraint firstItem="sEy-bw-r31" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="iLs-8Z-mCz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sEy-bw-r31" secondAttribute="bottom" constant="20" id="rzc-xz-AzH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="356.58482142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
